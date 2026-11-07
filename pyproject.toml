@@ -1,0 +1,11 @@
+[project]
+name = "rag-eval-harness"
+version = "0.1.0"
+description = "Retrieval and answer-quality evaluation for RAG systems: recall@k, MRR, nDCG, faithfulness"
+requires-python = ">=3.10"
+[project.optional-dependencies]
+dev = ["pytest"]
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.pytest.ini_options]
+pythonpath = ["src"]
